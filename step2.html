@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Roadmap Hub</title>
+
+<style>
+body{
+    font-family:Arial, sans-serif;
+    background:#f5f7fa;
+    margin:0;
+}
+
+.header{
+    background:#2563eb;
+    padding:15px;
+    position:sticky;
+    top:0;
+}
+
+.search-box{
+    width:100%;
+    max-width:500px;
+    margin:auto;
+}
+
+.search-box input{
+    width:100%;
+    padding:12px 18px;
+    border:none;
+    border-radius:30px;
+    font-size:16px;
+    outline:none;
+}
+
+.container{
+    max-width:800px;
+    margin:30px auto;
+}
+
+.item{
+    background:#fff;
+    margin:12px;
+    padding:18px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,.1);
+    cursor:pointer;
+    transition:.3s;
+}
+
+.item:hover{
+    background:#2563eb;
+    color:#fff;
+}
+</style>
+
+</head>
+<body>
+
+<div class="header">
+    <div class="search-box">
+        <input type="text" id="searchInput"
+               placeholder="Search Roadmaps..."
+               onkeyup="searchItems()">
+    </div>
+</div>
+
+<div class="container" id="roadmapList">
+
+    	<div class="item">Java Roadmap</div>
+    	<div class="item">Python Roadmap</div>
+    	<div class="item">Web Development</div>
+    	<div class="item">AI & Machine Learning</div>
+    	<div class="item">Data Science</div>
+    	<div class="item">Cyber Security</div>
+    	<div class="item">Cloud Computing</div>
+    	<div class="item">DevOps</div>
+    	<div class="item">Android Development</div>
+    	<div class="item">UI/UX Design</div>
+    	<div class="item">AI Automation</div>
+    	<div class="item">Python</div>
+    	<div class="item">Power BI</div>
+     	<div class="item">Tableau</div>
+      	<div class="item">Excel</div>
+     	<div class="item">Machnie Learning</div>
+     	<div class="item">Statistics</div>
+	 <div class="item">AI Agent</div>
+	 <div class="item">Large Language Models</div>
+	 <div class="item">RAG</div>
+	 <div class="item">AI APIs</div>
+	 <div class="item">Ethical Hacking</div>
+	 <div class="item">Cloud Security</div>
+	 <div class="item">SOC Analysis</div>
+	 <div class="item">Penetration Testing</div>
+	 <div class="item">Incident Response</div>
+	 <div class="item">AWs</div>
+	 <div class="item">Microsoft Azure</div>
+	 <div class="item">Google Cloud</div>
+	 <div class="item">Docker</div>
+	 <div class="item">Kubernetes</div>
+	 <div class="item">Terraform</div>
+	 <div class="item">Java</div>
+	 <div class="item">Javascript</div>
+	 <div class="item">TYpescript</div>
+	 <div class="item">React</div>
+	 <div class="item">Node.js</div>
+	 <div class="item">GO</div>
+	 <div class="item">Rust</div>
+	 <div class="item">CL/CD</div>
+	 <div class="item">Github Actions</div>
+	 <div class="item">Jenkins</div>
+	 <div class="item">Linux</div>
+	 <div class="item">Monitoring</div>
+	 <div class="item">Full Stack Development</div>
+	 <div class="item">MongoDB</div>
+	 <div class="item">PoatgreSQL</div>
+	 <div class="item">Digital Marketing</div>
+	 <div class="item">Google Analytics</div>
+	 <div class="item">AI-assisted Marketing</div>
+	 <div class="item">Product Management</div>
+	 <div class="item">High Demand business skills</div>
+	 <div class="item">Robotics</div>
+	 <div class="item">Semiconductor & VLSI</div>
+	 <div class="item">Supply Chain Analytics</div>
+	 <div class="item">Healthcare Technology</div>
+	 <div class="item">FinTech</div>
+	 <div class="item">Big data</div>
+	 <div class="item">AI & Generative</div>
+	 <div class="item">Data Analysis & Data Science</div>
+	 <div class="item">Software Engineering</div>
+	 <div class="item">Machine Learning & MLOPs</div>
+	 <div class="item">Automations & Robotics</div>
+	 <div class="item">AI prompting and workflow automation</div>
+	 <div class="item">AI+Business Automation</div>
+	 <div class="item">Data Analytics</div>	
+	 <div class="item">CUDA</div>
+ 	<div class="item">ABAP</div>
+ 	<div class="item">Networking</div>
+ 	<div class="item">cloud</div>
+ 	<div class="item">.NET</div>
+ 	<div class="item">Azure</div>
+ 	<div class="item">c++</div>
+ 	<div class="item">ioS</div>
+ 	<div class="item">SAP</div> 
+ 	<div class="item">Database</div>
+ 	<div class="item">Hybrid Cloud</div>
+ 	<div class="item">Red Hat</div> 
+ 	<div class="item">System Design</div>
+ 	<div class="item">Site Reliability Engineer</div>
+ 	<div class="item">Data Engineer</div>
+	 <div class="item">DSA</div>
+ 	<div class="item"></div>
+</div>
+
+<script>
+function searchItems() {
+    let input = document.getElementById("searchInput").value.toLowerCase();
+    let items = document.getElementsByClassName("item");
+
+    for (let i = 0; i < items.length; i++) {
+        let text = items[i].textContent.toLowerCase();
+
+        if (text.includes(input)) {
+            items[i].style.display = "block";
+        } else {
+            items[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+</body>
+</html>
